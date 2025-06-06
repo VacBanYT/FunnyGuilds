@@ -107,8 +107,7 @@ dependencies {
 
     shadow("com.sk89q.worldguard:worldguard-bukkit:7.0.5")
     shadow("net.milkbowl.vault:VaultAPI:1.7")
-    shadow("me.clip:placeholderapi:2.11.6") {
-//        because("PlaceholderAPI on versions higher than 2.10.9 causes GH-1700 for some unknown reason")
+    compileOnly("me.clip:placeholderapi:2.11.6") {
         exclude(group = "com.google.code.gson", module = "gson")
     }
     shadow("com.gmail.filoghost.holographicdisplays:holographicdisplays-api:2.4.9")
